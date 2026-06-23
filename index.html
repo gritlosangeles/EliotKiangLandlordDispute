@@ -39,9 +39,7 @@
     }
 
     h1,
-    p,
-    .date,
-    .event {
+    p {
       margin: 0;
       font-size: 14px;
       line-height: 1.65;
@@ -49,8 +47,7 @@
       letter-spacing: 0;
     }
 
-    .address,
-    .date {
+    .address {
       color: var(--muted);
     }
 
@@ -58,27 +55,10 @@
       padding-top: 32px;
     }
 
-    .entry {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 24px;
-      padding: 14px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .entry:first-of-type {
-      border-top: 0;
-    }
-
     @media (max-width: 700px) {
       main {
         width: min(100% - 28px, var(--max));
         padding-top: 44px;
-      }
-
-      .entry {
-        grid-template-columns: 1fr;
-        gap: 2px;
       }
     }
   </style>
@@ -90,22 +70,7 @@
       <p class="address">530 South Hewitt Street, Unit 129, Los Angeles, CA 90013</p>
     </header>
 
-    <section class="timeline" aria-label="Timeline of events">
-      <article class="entry">
-        <p class="date">Date</p>
-        <p class="event">Event details to be added.</p>
-      </article>
-
-      <article class="entry">
-        <p class="date">Date</p>
-        <p class="event">Event details to be added.</p>
-      </article>
-
-      <article class="entry">
-        <p class="date">Date</p>
-        <p class="event">Event details to be added.</p>
-      </article>
-    </section>
+    <section class="timeline" aria-label="Timeline of events"></section>
   </main>
 </body>
 </html>
